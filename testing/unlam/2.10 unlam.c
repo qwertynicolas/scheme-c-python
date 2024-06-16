@@ -14,7 +14,7 @@ int main() {
     printf("Ingrese el radio del círculo: ");
     scanf("%d", &radio);
 
-    superficie = pi * (radio * radio); // a de haber un operador para expresar el cuadrado/cubo de un numero pero por el momento esto sirve
+    superficie = pi * (radio * radio); // ha de haber un operador para expresar el cuadrado/cubo de un numero pero por el momento esto sirve
     perimetro = (2 * pi) * radio;
     volumen = (4.0 / 3.0) * pi * (radio * radio * radio);
 
