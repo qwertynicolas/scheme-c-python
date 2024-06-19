@@ -8,14 +8,14 @@ c. Si alguno de los dos primeros es menor al tercero informar “ALGUNO ES MENOR
 
 int main() {
 
-    int a, b ,c; 
+    double a, b ,c; 
 
     printf("Ingresar el primer número real: ");
-    scanf("%d", &a);
+    scanf("%lf", &a);
     printf("Ingresar el segundo número real: ");
-    scanf("%d", &b);
+    scanf("%lf", &b);
     printf("Ingresar el tercer número real: ");
-    scanf("%d" , &c);
+    scanf("%lf" , &c);
 
     if (a > c && b > c) {
         printf("Los dos primeros son mayores al tercero.\n");
