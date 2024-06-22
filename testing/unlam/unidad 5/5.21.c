@@ -18,7 +18,7 @@ decrementando la cantidad de asteriscos.
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int main() { // se trata a la parte superior y parte inferior como dos elementos distintos, no encontre forma de hacerlo de una sola vez
 
     int num;
 
@@ -26,7 +26,7 @@ int main() {
     scanf("%d", &num);
 
     for (int i = 0; i < num; ++i) {
-        for (int j = 0; j < num - i - 1; ++j) {
+        for (int j = 0; j < num - i - 1; ++j) { // primera parte del rombo (parte superior)
             printf(" ");
         }
 
@@ -37,16 +37,16 @@ int main() {
 
         }
 
-        for (int i = 0; i < num; ++i) {
-            for (int j = 0; j < num ; ++j) {
+        for (int i = num - 2; i >= 0; --i) { // segunda parte del rombo (parte inferior)
+            for (int j = 0; j < num - i - 1; ++j) {
+                printf(" ");
+            }
+
+            for (int k = 0; k < 2 * i + 1; ++k) {
                 printf("*");
             }
+            printf("\n");
         }
-
-        printf("\n");
-
-    
-
 
     return 0;
 }
