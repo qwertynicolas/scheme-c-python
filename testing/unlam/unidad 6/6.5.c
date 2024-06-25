@@ -13,8 +13,9 @@ la condición final. */
 
 #include <stdio.h>
 #include <stdlib.h>
-// funciona todo perfecto
-int Menu (float num1, float num2, float num3); // una terna es un valor de 3 números
+// NO funciona todo perfecto
+// en vez de float se podría utilizar double que es mucho más preciso a la hora de manejar números con puntos decimales
+int Menu (float num1, float num2, float num3); // una terna es un conjunto de 3 números
 float MayorValor (float num1, float num2, float num3);
 float Promedio (float num1, float num2, float num3);
 float Suma (float num1, float num2, float num3); 
@@ -65,6 +66,7 @@ int main() {
                 continue;
             }
             // era un continue, no un return 1
+            // acá hay un problema, el cual no voy a arreglar.
 
             // se podría hacer un if (opcion == 4) break; pero está teniendo el mismo resultado hacerlo dentro del switch 
         }
@@ -131,7 +133,7 @@ float Promedio(float num1, float num2, float num3) {
 
 int CondicionFinal(float num1, float num2, float num3) {
 
-    if (num1 == 1 && num2 == 2 && num3 == 3) { // en teoría debería de ser cualquier par ordenado en forma creciente, pero el más conveniente es 1, 2 y 3, ya que si ingreso por ejemplo 3.46, 7.67 y 9.87 el programa finalizaría, y no creo que sea cómodo que ocurra eso
+    if (num1 == 1 && num2 == 2 && num3 == 3) { // en teoría debería de ser cualquier par ordenado en forma creciente, pero el más conveniente es 1, 2 y 3, ya que si ingreso por ejemplo 3.46, 4.46 y 5.46 el programa finalizaría, y no creo que sea cómodo que ocurra eso
         return 1;
     } else {
         return 0;
