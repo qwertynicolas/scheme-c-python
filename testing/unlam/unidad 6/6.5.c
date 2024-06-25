@@ -68,7 +68,8 @@ int main() {
             // era un continue, no un return 1
             // acá hay un problema, el cual no voy a arreglar.
 
-            // se podría hacer un if (opcion == 4) break; pero está teniendo el mismo resultado hacerlo dentro del switch 
+            // se podría hacer un if (opcion == 4) break; pero está teniendo el mismo resultado hacerlo dentro del switch
+            // lo de arriba es mentira
         }
 
         printf("\nPresione Enter si desea continuar...\n");
