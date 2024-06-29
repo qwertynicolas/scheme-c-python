@@ -1,6 +1,6 @@
 referencia:
 https://www.amazon.com/s?k=The+C+Programming+Language+Brian+W.+Kernighan+Dennis+M.+Ritchie
-o https://singlelogin.re/book/633119/dac266/the-c-programming-language.html (pdf en zlibrary)
+o https://archive.org/search?query=The+C+programming+language+Ritchie+Kernighan
 
 https://youtu.be/KJgsSFOSQv0?si=zMw1TNSUhXySnO9d curso gratutito de freecodecamp
 
