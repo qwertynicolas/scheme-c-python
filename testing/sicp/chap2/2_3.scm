@@ -9,7 +9,7 @@
 (define (y-point b)
   (cdr b))
 
-; we need at least 4 points to make a rectangle
+; we need at least 3 points to make a rectangle
 
 (define point1
   (make-point 3 4))
